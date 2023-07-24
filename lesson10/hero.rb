@@ -1,12 +1,12 @@
 puts 'Злодея какого персонажа вы хотите узнать?'
 hero = gets.downcase.chomp
-case hero
-when 'бэтмен', 'batman'
-  puts 'joker'
-when 'шерлок холмс', 'sherlok holms'
-  puts 'Профессор Мориарти'
-when 'buratino', 'буратино'
-  puts 'Карабас-барабас'
+hero_enemy = {
+  'batman' => 'joker',
+  'sherlok holms' => 'Профессор Мориарти',
+  'buratino' => 'Карабас-барабас'
+}
+if hero_enemy.has_key?(hero)
+  puts "У #{hero} враг #{hero_enemy[hero]}"
 else
-  puts 'Злодей не найден!'
+  puts 'Враг не найден'
 end

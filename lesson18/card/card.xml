@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+  <photo img = "image.jpg"/>
+  <first_name>Иван</first_name>
+  <surname>Иванов</surname>
+  <number>+375 29 1234567</number>
+  <email>ivanov@gmail.com</email>
+  <about>Начинающий кондитер</about>
+</info>
